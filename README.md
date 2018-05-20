@@ -10,7 +10,8 @@ Simple Java application that implements and applies text mining techniques with 
 ### Text Pre-Processing
 This software applies the following techniques in the input and training data:
  - Remove punctuation;
- - Remove stopwords;
+ - Remove stopwords (words that doesn't add to the meaning of the text; Supports english and portuguese language);
+ - Remove numbers;
  - Remove accents.
 
 
@@ -19,7 +20,7 @@ Term frequency–inverse document frequency, is a numerical statistic that is in
 > Source: [Wikipedia](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)
 
 ### Naive Bayes
-Naive Bayes is a famous probability algorithm used for text mining based on the [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem). It requires a trained file containing the probability of each word to be used in a given context (class). The idea is that, if a text belongs to certain class, it will contains more words used in that class than in others. To classify a entry we must then extract and clear the words of the text (by removing accents, punctuation, etc), and compare it for each class of our trained file. The class that contains the most words in common is the one we choose as the answer. 
+Naive Bayes is a famous probability algorithm used for text mining based on the [Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem). It requires a trained file containing the probability of each word to be used in a given context (class). The idea is that, if a text belongs to certain class, it will contains more words used in that class than in others. To classify an entry we must then extract and clear the words of the text (by removing accents, punctuation, etc), and compare it for each class of our trained file. The class that contains the most words in common is the one we choose as the answer. 
 > Full description on: [Wikipedia](https://en.wikipedia.org/wiki/Naive_Bayes_classifier)
 
 <hr>
