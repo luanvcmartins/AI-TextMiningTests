@@ -37,7 +37,7 @@ public class NaiveBayes {
             double p = 1;
             for (String word : words) {
                 if (classData.containsKey(word)) {
-                    p += classData.get(word);
+                    p *= classData.get(word);
                 }
             }
             p /= bag.getProbabilityOf(className) + 1;
